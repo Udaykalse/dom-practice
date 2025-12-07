@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HC1</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <input type="text" id="userInput" placeholder="Enter your Name...." />
+    <button id="submitBtn">Submit</button>
+    <h3>Output:-</h3>
+    <p id="output"></p>
+
+    <script>
+      const submitBtn = document.getElementById("submitBtn");
+
+      submitBtn.addEventListener("click", function () {
+        const text = document.getElementById("userInput").value;
+        const output = document.getElementById("output");
+        output.textContent = text;
+      });
+    </script>
+  </body>
+</html>
